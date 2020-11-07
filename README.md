@@ -6,6 +6,7 @@
 3. Setup a new project. The name of your project will be the URL.
 <img src="/img/new_project.png" alt="" data-canonical-src="/img/new_project.png" />
 4. Add Firebase SDKs and [initialize](https://firebase.google.com/docs/web/setup#add-sdks-initialize) Firebase. Use the Hosting URLs and copy the folliwng:
+
    ```html 
    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
    <script src="/__/firebase/8.0.1/firebase-app.js"></script>
