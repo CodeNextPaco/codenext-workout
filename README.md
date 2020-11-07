@@ -6,7 +6,10 @@
 3. Setup a new project. The name of your project will be the URL.
 <p><img src="/img/new_project.png" alt="" data-canonical-src="/img/new_project.png" /></p>
 
-4. Add Firebase SDKs and [initialize](https://firebase.google.com/docs/web/setup#add-sdks-initialize) Firebase. Use the Hosting URLs and copy the folliwng:
+4. Add a Firebase app on the Firebase console.
+<p><img src="/img/firebase_app.png" alt="" data-canonical-src="/img/irebase_app.png" /></p>
+
+1. Add Firebase SDKs and [initialize](https://firebase.google.com/docs/web/setup#add-sdks-initialize) Firebase. Use the Hosting URLs and copy the folliwng:
 
    ```html 
    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -18,12 +21,19 @@
    <script src="/__/firebase/8.0.1/firebase-firestore.js"></script>
    ``` 
    * Copy the above into the following files:
-     * home.html
-     * index.html
-     * login.html
-5. On VisualCode open a new terminal.
+     * src/public/home.html
+     * src/public/index.html
+     * src/public/login.html
+2. On VisualCode open a new terminal and type the following.
    ```shell
    foo@bar:~$ npm install --save firebase
+   foo@bar:~$ npm install -g firebase-tools
    ```
+3. Install [CLI](https://firebase.google.com/docs/hosting/quickstart#initialize) and deploy to Firebase Hosting
+4. Initialize your Firebase project.
+   ```shell
+   foo@bar:~$ firebase init hosting
+   ```
+5.  dd
 
    
