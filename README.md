@@ -23,7 +23,7 @@ Develop a web app using the following stack of technologies:
 
 1. Open a Terminal and typ the following command.
    ```console 
-   $ git clone https://github.com/encomp/codenext_emojify.git
+   $ git clone https://github.com/encomp/codenext-workout.git
    ```
 2. Open Visual Code and the open your project.
 3. Open a new Terminal in VisualCode and type the following command.
