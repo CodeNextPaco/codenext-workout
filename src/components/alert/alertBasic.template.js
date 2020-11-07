@@ -1,3 +1,5 @@
+// Defines the basic alert html bootstrap component.
+// see: https://getbootstrap.com/docs/4.5/components/alerts/#examples
 export const alertBasicTemplate = model => `
 <div class="alert ${model.type}" role="alert">
         ${model.msg}
