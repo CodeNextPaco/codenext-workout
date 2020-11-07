@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Workout Home</title>
+    <!-- Bootstrap core CSS -->
+    <script src="./home.js"></script>
+</head>
+
+<body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead">
+            <div class="inner">
+                <h3 class="masthead-brand">Workout</h3>
+                <nav class="nav nav-masthead justify-content-center" id="pills-tab" role="tablist">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                        aria-controls="pills-home" aria-selected="true">Home</a>
+                    <a class="nav-link" id="pills-today-tab" data-toggle="pill" href="#pills-today" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Today</a>
+                    <a class="nav-link" id="pills-history-tab" data-toggle="pill" href="#pills-history" role="tab"
+                        aria-controls="pills-history" aria-selected="false">History</a>
+                    <form class="form-inline">
+                        <button id="btnLogOut" class="btn btn-outline-light" style="margin-left: 40px;">Log Out</button>
+                    </form>
+                </nav>
+            </div>
+        </header>
+
+        <div class="album py-5">
+            <div class="container">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="row">
+                            <div id="cardExercise" class="col-lg"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-today" role="tabpanel" aria-labelledby="pills-today-tab">
+                        <div id="cardTodayProgress" class="col-lg"></div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab">
+                        <div id="cardHistory" class="col-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Workout built with <a href="https://getbootstrap.com/">Bootstrap</a>, by <a
+                        href="https://github.com/encomp">@edgarmtzrico</a>.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
