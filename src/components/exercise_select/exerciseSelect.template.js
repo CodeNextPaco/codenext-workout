@@ -1,3 +1,5 @@
+// Creates a basic select with the exercises values.
+// see: https://getbootstrap.com/docs/4.5/components/alerts/#examples
 export const exerciseSelectTemplate = model => `               
     <label for="${model.id}"><img class="bg-light mb-3" style="padding: 15px; border-radius: 50px;" id="${model.id}Img" src="" /></label>
     <select class="custom-select" id="${model.id}" required>
