@@ -28,4 +28,13 @@
         height: 47px;
    }
    ```
-7. 
+7. Finally add the style to the button as follows:
+   ```html
+   <button type="button" class="btn btn-outline-light btn-floating">
+       <span class="fab fa-google" aria-hidden="true"></span>
+   </button>
+   ```
+8. Let's create a new component that can be reused. These component will consist of two parts:
+   * A template: This is a string in which a few elements will be replaced
+   * A Component: This is JS code that allow us to add code to the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) of a web page. This will allow us to render the Template on the page and also allows you to add event such as on click.
+9. 
