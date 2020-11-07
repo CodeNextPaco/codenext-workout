@@ -7,7 +7,10 @@
 <p><img src="/img/new_project.png" alt="" data-canonical-src="/img/new_project.png" /></p>
 
 4. Add a Firebase app on the Firebase console.
-<p><img src="/img/firebase_app.png" alt="" data-canonical-src="/img/irebase_app.png" /></p>
+<p><img src="/img/firebase_app.png" alt="" data-canonical-src="/img/firebase_app.png" /></p>
+
+* <p><img src="/img/register_app_1.png" alt="" data-canonical-src="/img/register_app_1.png" /></p> 
+* <p><img src="/img/register_app_2.png" alt="" data-canonical-src="/img/register_app_2.png" /></p> 
 
 5. On VisualCode open a new terminal and type the following.
    ```shell
@@ -29,12 +32,11 @@
      * src/public/home.html
      * src/public/index.html
      * src/public/login.html
-7. Install [CLI](https://firebase.google.com/docs/hosting/quickstart#initialize) and deploy to Firebase Hosting
-8. Initialize your Firebase project.
+7. Initialize your Firebase project.
    ```shell
    foo@bar:~$ firebase login
    foo@bar:~$ firebase init
    ```
-9.  dd
+8.  dd
 
    
