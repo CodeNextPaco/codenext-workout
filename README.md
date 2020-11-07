@@ -11,13 +11,34 @@
 
 * <p><img src="/img/register_app_1.png" alt="" data-canonical-src="/img/register_app_1.png" /></p> 
 * <p><img src="/img/register_app_2.png" alt="" data-canonical-src="/img/register_app_2.png" /></p> 
+* <p><img src="/img/register_app_3.png" alt="" data-canonical-src="/img/register_app_3.png" /></p>
+* <p><img src="/img/register_app_4.png" alt="" data-canonical-src="/img/register_app_4.png" /></p> 
 
-5. On VisualCode open a new terminal and type the following.
+5. On VisualCode open a new terminal and type the following to install firebase CLI.
    ```shell
-   foo@bar:~$ npm install --save firebase
    foo@bar:~$ npm install -g firebase-tools
    ```
-6. Add Firebase SDKs and [initialize](https://firebase.google.com/docs/web/setup#add-sdks-initialize) Firebase. Use the Hosting URLs and copy the folliwng:
+6. In the same terminal type the following to add firebase dependencies to your project.
+   ```shell
+   foo@bar:~$ npm install --save firebase
+   ```
+7. In the same terminal. Initialize your Firebase project.
+   ```shell
+   foo@bar:~$ firebase login
+   foo@bar:~$ firebase init hosting
+   ```
+<p><img src="/img/firebase_init_hosting.png" alt="" data-canonical-src="/img/firebase_init_hosting.png" /></p>
+
+8. In the same terminal. Initialize your Firebase project.
+   ```shell
+   foo@bar:~$ firebase deploy
+   ```
+<p><img src="/img/firebase_deploy.png" alt="" data-canonical-src="/img/firebase_deploy.png" /></p>
+
+9. Goto your newly publish web site. Copy the URL and view it on a browser.
+<p><img src="/img/website.png" alt="" data-canonical-src="/img/website.png" /></p>
+
+10. Add Firebase SDKs and [initialize](https://firebase.google.com/docs/web/setup#add-sdks-initialize) Firebase. Use the Hosting URLs and copy the folliwng:
 
    ```html 
    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -32,11 +53,5 @@
      * src/public/home.html
      * src/public/index.html
      * src/public/login.html
-7. Initialize your Firebase project.
-   ```shell
-   foo@bar:~$ firebase login
-   foo@bar:~$ firebase init
-   ```
-8.  dd
-
+11.  
    
