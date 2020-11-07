@@ -1,4 +1,4 @@
-//TODO(3): Add your project configuration from the firebase console.
+//TODO: Add your project configuration from the firebase console.
 export const firebaseConfig = {
   apiKey: "AIzaSyB1m9Seu92cRIJK-5RPM1Tj1nonrUdrYEo",
   authDomain: "codenext-workout.firebaseapp.com",

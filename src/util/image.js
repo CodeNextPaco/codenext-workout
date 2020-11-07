@@ -1,3 +1,4 @@
+// Helper map that stores the location of the image for a specific exercise.
 export const imageMap = new Map();
 imageMap['abs'] = 'assets/icons8-abs-50.png';
 imageMap['back'] = 'assets/icons8-back-50.png';

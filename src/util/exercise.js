@@ -1,4 +1,4 @@
-// Defines a new class 
+// Defines a new class to store the progress of an exercise in Firestore
 export class Exercises {
     constructor(abs, back, biceps, chest, calves, forearms, quadriceps, shoulders, triceps) {
         this.abs = abs;

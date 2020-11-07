@@ -3,6 +3,7 @@ import 'firebase/auth';
 import 'firebase/database';
 import { firebaseConfig } from './firebaseConfig';
 
+// Helper code that initialize firebase.
 try {
     firebase.initializeApp(firebaseConfig);
     let app = firebase.app();
