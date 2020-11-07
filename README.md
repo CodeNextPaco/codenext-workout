@@ -53,5 +53,18 @@
      * src/public/home.html
      * src/public/index.html
      * src/public/login.html
-11.  
-   
+11.  Build your project. Open a new terminal on visual code and type the following.
+   ```shell
+   foo@bar:~$ npm run build
+   ```
+12. Deploy your changes to firebase.
+    ```shell
+   foo@bar:~$ firebase deploy
+   ```
+
+13. Go to your website and see your changes.
+
+* <p><img src="/img/home_page.png" alt="" data-canonical-src="/img/home_page.png" /></p>
+* <p><img src="/img/login_page.png" alt="" data-canonical-src="/img/login_page.png" /></p>
+
+14. 
