@@ -4,7 +4,8 @@
 1. Open the following [link](https://firebase.google.com/docs/web/setup) and follow these steps.
 2. Goto the firebase [console](https://console.firebase.google.com).
 3. Setup a new project. The name of your project will be the URL.
-<img src="/img/new_project.png" alt="" data-canonical-src="/img/new_project.png" />
+<p><img src="/img/new_project.png" alt="" data-canonical-src="/img/new_project.png" /></p>
+
 4. Add Firebase SDKs and [initialize](https://firebase.google.com/docs/web/setup#add-sdks-initialize) Firebase. Use the Hosting URLs and copy the folliwng:
 
    ```html 
