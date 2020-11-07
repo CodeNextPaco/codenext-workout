@@ -99,6 +99,6 @@ function saveOrUpdate(exercise, userEmail, newDate, data, todayCardId) {
 }
 
 function getMetaDataRef(userEmail, newDate) {
-    // TODO (1)
-    //return firestore.collection("exercises").doc(userEmail).collection("dates").doc(newDate);
+    // TODO (1): Write the firebase 
+    return
 }
