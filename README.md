@@ -8,4 +8,4 @@
 3. Copy your project configuration and paste it on [firebaseConfig.js](https://github.com/encomp/codenext-workout/blob/03-branch/src/services/firebaseConfig.js#L2).
 <p><img src="/img/firebase_config.png" alt="" data-canonical-src="/img/firebase_config.png" /></p> 
 
-4.  
+4. 
