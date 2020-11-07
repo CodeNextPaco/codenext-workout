@@ -51,7 +51,7 @@
             return buttonLoginTemplate(model);
         },
 
-        afterRender(model, onSuccess, onError) {
+        afterRender(model) {
             const loginButton = document.querySelector('#' + model.id);
             loginButton.addEventListener('click', event => {
                 console.log("User click");
@@ -59,11 +59,36 @@
         },
     }
    ```  
-8. dd
-9. dd 
-10. What is [Authentication](https://firebase.google.com/docs/auth)?
-11.  Goto firebase [console](https://console.firebase.google.com) and open your project settings.
+8. Let's try it out our new component. On the [login.js]() type the following.
+   1. Add the following import:
+      ```javascript
+      import { window.onload = function () { 
+          divElement = document.getElementById("loginButtons");
+          divElement.innerHTML = "<p>Hello World</p>";
+      }; } from './components/login_button/loginButton.component';
+      ```
+   2. Lets define a new function as follow:
+      ```javascript
+      window.onload = function () { 
+          const divElement = document.getElementById("loginButtons");
+          divElement.innerHTML = "<p>Hello World</p>";
+      };
+      ```
+   3. Lets replace the code above for the component.
+      ```javascript
+      window.onload = function () { 
+          const model = {
+            id: 'googleBtn',
+            image: 'fa-google'
+          };
+          const divElement = document.getElementById("loginButtons");
+          divElement.innerHTML = LoginButtonComponent.render(model);
+          LoginButtonComponent.afterRender(model);
+      };
+      ```
+9.  What is [Authentication](https://firebase.google.com/docs/auth)?
+10.  Goto firebase [console](https://console.firebase.google.com) and open your project settings.
 <p><img src="/img/project_settings.png" alt="" data-canonical-src="/img/project_settings.png" /></p> 
 
-1.  Copy your project configuration and paste it on [firebaseConfig.js](https://github.com/encomp/codenext-workout/blob/03-branch/src/services/firebaseConfig.js#L2).
+11.  Copy your project configuration and paste it on [firebaseConfig.js](https://github.com/encomp/codenext-workout/blob/03-branch/src/services/firebaseConfig.js#L2).
 <p><img src="/img/firebase_config.png" alt="" data-canonical-src="/img/firebase_config.png" /></p>  
