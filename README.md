@@ -20,3 +20,6 @@
 
    * Finally select a region and enable it.
    <p><img src="/img/enable_database.png" alt="" data-canonical-src="/img/enable_database.png" /></p>
+
+5. We need to define how we will store the data of our exercise card.
+   <p><img src="/img/exercise_card.png" alt="" data-canonical-src="/img/exercise_card.png" /></p>
