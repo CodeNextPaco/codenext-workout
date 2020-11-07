@@ -62,10 +62,7 @@
 8. Let's try it out our new component. On the [login.js](https://github.com/encomp/codenext-workout/blob/03-branch/src/login.js#L1) type the following.
    1. Add the following import:
       ```javascript
-      import { window.onload = function () { 
-          divElement = document.getElementById("loginButtons");
-          divElement.innerHTML = "<p>Hello World</p>";
-      }; } from './components/login_button/loginButton.component';
+      import { LoginButtonComponent } from './components/login_button/loginButton.component';
       ```
    2. Lets define a new function as follow:
       ```javascript
