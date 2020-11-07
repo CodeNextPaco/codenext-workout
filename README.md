@@ -1,6 +1,6 @@
 # Workout
 
-### Exercise Three: Storing Data in Firestore
+### Exercise Three: Setting up Firestore
 1. What is a [database](https://en.wikipedia.org/wiki/Database)?
    * Is an organized collection of data, generally stored and accessed electronically from a computer system.
 2. What is a [NoSQL](https://www.youtube.com/watch?v=v_hR4K4auoQ) database?
@@ -20,5 +20,3 @@
 
    * Finally select a region and enable it.
    <p><img src="/img/enable_database.png" alt="" data-canonical-src="/img/enable_database.png" /></p>
-
-5.  
