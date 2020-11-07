@@ -22,21 +22,21 @@ Develop a web app using the following stack of technologies:
 ## Set up your environment
 
 1. Open a Terminal and typ the following command.
-   ```console 
-   $ git clone https://github.com/encomp/codenext-workout.git
+   ```shell 
+   foo@bar:~$ git clone https://github.com/encomp/codenext-workout.git
    ```
 2. Open Visual Code and the open your project.
 3. Open a new Terminal in VisualCode and type the following command.
-   ```console
-   $ npm install 
+   ```shell
+   foo@bar:~$ npm install 
    ```
 4. In the same console type the following command.
-   ```console
-   $ npm run build
+   ```shell
+   foo@bar:~$ npm run build
    ```
 5. Lets run our small web server.
-   ```console
-   $ npm run start
+   ```shell
+   foo@bar:~$ npm run start
    ```
 
    
