@@ -2,8 +2,6 @@ import { exerciseCardTemplate } from './exerciseCard.template';
 import { ExerciseSelectComponent } from './../exercise_select/exerciseSelect.component';
 import { AlertComponent } from './../alert/alert.component';
 import { Exercises } from './../../util/exercise';
-import { getMetaDataRef, saveMetaData, updateMetaData } from './../../repository/metadata';
-import { getExerciseRef, saveExercise, updateExercise } from './../../repository/exercises';
 import { TodayCardComponent } from './../today_card/todayCard.component';
 
 // Define a new card that will be used to log the exercise data.
