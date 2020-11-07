@@ -1,7 +1,7 @@
 import { exerciseCardTemplate } from './exerciseCard.template';
 import { ExerciseSelectComponent } from './../exercise_select/exerciseSelect.component';
 import { AlertComponent } from './../alert/alert.component';
-import { Exercises } from './../../util/exercise';
+import { Exercises, converterExercises } from './../../util/exercise';
 import { TodayCardComponent } from './../today_card/todayCard.component';
 
 // Define a new card that will be used to log the exercise data.
@@ -84,21 +84,59 @@ function validData(selectComponent, repetition, weight) {
 // This function should create a new entry on firestore.
 function saveOrUpdate(exercise, userEmail, newDate, data, todayCardId) {
     const docMetaRef = getMetaDataRef(userEmail, newDate);
-    // TODO (2): Determine if a document exists on exercises. 
-    // Write a promise that evaluates the response from firestore.
+    // Logic to store or update a new document on the exercises collection.
     docMetaRef.get().then(function (doc) {
         if (doc.exists) {
-            
+            console.log("Document found");
+            // TODO (3.1): if the document is found updated it
         } else {
-            
+            console.log("Document does not exist");
+            // TODO (2.1): if a document does not store it.
         }
     }).catch(function (error) {
         console.log("Error getting document:", error);
         
     });
+
+    // Logic to store or update a new document on the exercises collection.
+    const docRef = getExerciseRef(exercise, userEmail, newDate);
+    docRef.get().then(function (doc) {
+        if (doc.exists) {
+            // TODO (6.1): if a document exist update it.
+        } else {
+            // TODO (5.1): if a document does not store it.
+        }
+    }).catch(function (error) {
+        console.log("Error getting document:", error);
+    });
 }
 
 function getMetaDataRef(userEmail, newDate) {
-    // TODO (1): Write the firebase 
+    // TODO (1): Get a document from exercises collection
     return
+}
+
+function saveMetaData(userEmail, newDate, data) {
+    // TODO(2): Use firestore to store an exercise document.
+    return 
+}
+
+function updateMetaData(docRef, data) {
+    // TODO (3): Update an exercise document.
+    return 
+}
+
+function getExerciseRef(exercise, userEmail, newDate) {
+    // TODO (4): Get a document from a specific exercise collection.
+    return 
+}
+
+function saveExercise(exercise, user, newDate, data) {
+    // TODO (5): Save a new document from a specific execise collection. 
+    return 
+}
+
+function updateExercise(docRef, data) {
+    // TODO (6): Update a document from a specific execise collection. 
+    return 
 }
