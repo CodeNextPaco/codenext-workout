@@ -83,5 +83,22 @@ function validData(selectComponent, repetition, weight) {
 
 // This function should create a new entry on firestore.
 function saveOrUpdate(exercise, userEmail, newDate, data, todayCardId) {
-    
+    const docMetaRef = getMetaDataRef(userEmail, newDate);
+    // TODO (2): Determine if a document exists on exercises. 
+    // Write a promise that evaluates the response from firestore.
+    docMetaRef.get().then(function (doc) {
+        if (doc.exists) {
+            
+        } else {
+            
+        }
+    }).catch(function (error) {
+        console.log("Error getting document:", error);
+        
+    });
+}
+
+function getMetaDataRef(userEmail, newDate) {
+    // TODO (1)
+    //return firestore.collection("exercises").doc(userEmail).collection("dates").doc(newDate);
 }
