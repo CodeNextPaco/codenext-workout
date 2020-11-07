@@ -23,3 +23,6 @@
 
 5. We need to define how we will store the data of our exercise card.
    <p><img src="/img/exercise_card.png" alt="" data-canonical-src="/img/exercise_card.png" /></p>
+
+6. Here are all the collections that we will need.
+   <p><img src="/img/collections.png" alt="" data-canonical-src="/img/collections.png" /></p>
