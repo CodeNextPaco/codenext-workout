@@ -1,3 +1,4 @@
+// Defines the new card html that will be used to track the progress of each exercise
 export const exerciseCardTemplate = model => `
 <div class="card bg-dark mb-3">
     <div class="card-header">
@@ -10,6 +11,7 @@ export const exerciseCardTemplate = model => `
         </div>
     </div>
     <div class="card-body">
+       <!-- Define a place to display Alerts for the user -->
         <div id="${model.id}Alert"></div>
         <form class="was-validated">
             <div class="form-row">
