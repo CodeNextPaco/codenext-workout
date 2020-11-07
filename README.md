@@ -1,5 +1,11 @@
 # Workout
 
 ### Exercise Two: Set up Firebase Authentication
-1. Open the following [link](https://firebase.google.com/docs/web/setup) and follow these steps.
-2. Goto the firebase [console](https://console.firebase.google.com).
+1. What is [Authentication](https://firebase.google.com/docs/auth)?
+2. Goto firebase [console](https://console.firebase.google.com) and open your project settings.
+<p><img src="/img/project_settings.png" alt="" data-canonical-src="/img/project_settings.png" /></p> 
+
+3. Copy your project configuration and paste it on [firebaseConfig.js]().
+<p><img src="/img/firebase_config.png" alt="" data-canonical-src="/img/firebase_config.png" /></p> 
+
+4.  
