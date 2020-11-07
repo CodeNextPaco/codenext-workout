@@ -1,3 +1,4 @@
+// Defines a new class 
 export class Exercises {
     constructor(abs, back, biceps, chest, calves, forearms, quadriceps, shoulders, triceps) {
         this.abs = abs;

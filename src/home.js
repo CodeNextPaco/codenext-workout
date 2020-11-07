@@ -4,6 +4,10 @@ import './scss/login.scss';
 import firebase from 'firebase';
 import { auth } from './services/firebaseService'
 import { gotoIndex } from './util/redirect'
+import { ExerciseCardComponent } from './components/exercise_card/exerciseCard.component';
+import { TodayCardComponent } from './components/today_card/todayCard.component';
+import { HistoryCardComponent } from './components/history_card/historyCard.component';
+import { getDate } from './util/date';
 
 // Make the page visible only when the user is logged in.
 firebase.auth().onAuthStateChanged(function (newuser) {
@@ -28,6 +32,11 @@ firebase.auth().onAuthStateChanged(function (newuser) {
             });
         });
 
+        const forDate = getDate();
+        const todayCardId = '#cardTodayProgress';
+        ExerciseCardComponent.init('#cardExercise', newuser.email, todayCardId, forDate);
+        TodayCardComponent.init(todayCardId, newuser.email, forDate);
+        HistoryCardComponent.init('#cardHistory', newuser.email);
     } else {
         gotoIndex();
     }
