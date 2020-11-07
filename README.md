@@ -59,7 +59,7 @@
         },
     }
    ```  
-8. Let's try it out our new component. On the [login.js]() type the following.
+8. Let's try it out our new component. On the [login.js](https://github.com/encomp/codenext-workout/blob/03-branch/src/login.js#L1) type the following.
    1. Add the following import:
       ```javascript
       import { window.onload = function () { 
@@ -96,4 +96,50 @@
 13. Let's configure [Google](https://firebase.google.com/docs/auth/web/google-signin) Sign-In.
 <p><img src="/img/google_sign_in.png" alt="" data-canonical-src="/img/google_sign_in.png" /></p>
 
-14. dd
+14. Let's modify the [loginButton.component.js](https://github.com/encomp/codenext-workout/blob/03-branch/src/components/login_button/loginButton.component.js). We will need to add the firebase signInWithPopip as follow:
+    ```javascript
+    import firebase from 'firebase';
+    import 'firebase/auth';
+    import { buttonLoginTemplate } from './loginButton.template';
+
+    export const LoginButtonComponent = {
+
+        render(model) {
+            return buttonLoginTemplate(model);
+        },
+
+        afterRender(model, onSuccess, onError) {
+            const loginButton = document.querySelector('#' + model.id);
+                loginButton.addEventListener('click', event => {
+                const provider = model.provider;
+                firebase.auth().signInWithPopup(provider).then(function (result) {
+                    console.log(result);
+                    if (onSuccess !== undefined) {
+                        onSuccess(result);
+                    }
+                }).catch(function (error) {
+                    console.log(error);
+                    if (onError !== undefined) {
+                        onError(error);
+                    }
+                });
+            });
+        },
+    }
+    ```
+15. Let's M
+    ```javascript
+      window.onload = function () { 
+          let provider = new auth.GoogleAuthProvider();
+          provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+          const model = {
+            id: 'googleBtn',
+            image: 'fa-google',
+            provider: provider
+          };
+          const divElement = document.getElementById("loginButtons");
+          divElement.innerHTML = LoginButtonComponent.render(model);
+          LoginButtonComponent.afterRender(model);
+      };
+      ```
+16. dd
