@@ -92,3 +92,8 @@
 
 11.  Copy your project configuration and paste it on [firebaseConfig.js](https://github.com/encomp/codenext-workout/blob/03-branch/src/services/firebaseConfig.js#L2).
 <p><img src="/img/firebase_config.png" alt="" data-canonical-src="/img/firebase_config.png" /></p>  
+
+13. Let's configure [Google](https://firebase.google.com/docs/auth/web/google-signin) Sign-In.
+<p><img src="/img/google_sign_in.png" alt="" data-canonical-src="/img/google_sign_in.png" /></p>
+
+14. dd
