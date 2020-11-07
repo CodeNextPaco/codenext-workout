@@ -127,7 +127,7 @@
         },
     }
     ```
-15. Let's M
+15. Finally let's modify the [login.js](https://github.com/encomp/codenext-workout/blob/03-branch/src/login.js#L1) to pass the proper provider to sign in.
     ```javascript
       window.onload = function () { 
           let provider = new auth.GoogleAuthProvider();
@@ -142,4 +142,3 @@
           LoginButtonComponent.afterRender(model);
       };
       ```
-16. dd
