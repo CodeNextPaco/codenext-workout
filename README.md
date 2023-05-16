@@ -36,7 +36,7 @@ Develop a web app using the following stack of technologies:
    ```
 5. Lets run our small web server.
    ```shell
-   foo@bar:~$ npm run start
+   foo@bar:~$ npm run stsart
    ```
 
    
